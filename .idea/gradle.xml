@@ -16,6 +16,7 @@
             <option value="$PROJECT_DIR$/mod4demoskt" />
             <option value="$PROJECT_DIR$/mod4tprandom" />
             <option value="$PROJECT_DIR$/mod4tpvraifaux" />
+            <option value="$PROJECT_DIR$/mod5nav" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
