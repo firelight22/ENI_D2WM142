@@ -2,6 +2,8 @@ package com.example.mod4tpvraifaux
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import com.example.mod4tpvraifaux.bo.QuestionReponse
 import com.example.mod4tpvraifaux.databinding.ActivityMainBinding
@@ -17,6 +19,19 @@ class MainActivity : AppCompatActivity() {
         amb = DataBindingUtil.setContentView(this,R.layout.activity_main)
         feedArray()
         amb.maxNbQ = arrQR.size
+        askQuestion()
+        amb.buttonFalse.setOnClickListener { checkAnswers(it) }
+        amb.buttonTrue.setOnClickListener { checkAnswers(it) }
+    }
+
+    fun checkAnswers(v : View){
+        val answerUser : Boolean = v.id == R.id.buttonTrue
+        if(answerUser == arrQR[index].reponse){
+            score++
+            index++
+        }else{
+            index++
+        }
         askQuestion()
 
     }
@@ -34,8 +49,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun askQuestion(){
-        amb.indexQ = index +1
         amb.score = score
+        if(index == arrQR.size){
+            Toast.makeText(this, "Questionnaire finit", Toast.LENGTH_SHORT).show()
+            amb.buttonTrue.isEnabled = false
+            amb.buttonFalse.isEnabled = false
+            return
+        }
+        amb.indexQ = index +1
         amb.qr = arrQR[index]
     }
 }
