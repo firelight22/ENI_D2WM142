@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/mod4demodatabinding" />
             <option value="$PROJECT_DIR$/mod4demoskt" />
             <option value="$PROJECT_DIR$/mod4tprandom" />
+            <option value="$PROJECT_DIR$/mod4tpvraifaux" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
