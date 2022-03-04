@@ -7,8 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.NavDirections
 import androidx.navigation.Navigation
 import com.example.mod5nav.R
+import com.example.mod5nav.User
 import com.example.mod5nav.databinding.FragmentSignInBinding
 
 
@@ -30,8 +32,13 @@ class SignInFragment : Fragment() {
         fsb.buttonSignIn.setOnClickListener{
             if(fsb.editTextEmail.text.isNotEmpty() &&
                 fsb.editTextPassword.text.isNotEmpty()
-            )
-            Navigation.findNavController(it).navigate(R.id.action_signInFragment_to_homeFragment3)
+            ){
+                var homeFragDir = SignInFragmentDirections.actionSignInFragmentToHomeFragment3(
+                    User(email = fsb.editTextEmail.text.toString(),
+                    password = fsb.editTextPassword.text.toString()),
+                )
+                Navigation.findNavController(it).navigate(homeFragDir)
+            }
 
         }
 
