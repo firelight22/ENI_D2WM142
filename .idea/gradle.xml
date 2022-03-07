@@ -17,8 +17,10 @@
             <option value="$PROJECT_DIR$/mod4tprandom" />
             <option value="$PROJECT_DIR$/mod4tpvraifaux" />
             <option value="$PROJECT_DIR$/mod5nav" />
+            <option value="$PROJECT_DIR$/mod5navdrawer" />
             <option value="$PROJECT_DIR$/mod5tpcolorme" />
             <option value="$PROJECT_DIR$/mod5tptellmeastory" />
+            <option value="$PROJECT_DIR$/mod6intent" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
