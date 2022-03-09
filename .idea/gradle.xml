@@ -23,8 +23,10 @@
             <option value="$PROJECT_DIR$/mod6intent" />
             <option value="$PROJECT_DIR$/mod6nemoubliepas" />
             <option value="$PROJECT_DIR$/mod7compteur" />
+            <option value="$PROJECT_DIR$/mod7lancerdes" />
             <option value="$PROJECT_DIR$/mod7lifecycle" />
             <option value="$PROJECT_DIR$/mod7plusoumoins" />
+            <option value="$PROJECT_DIR$/mod9room" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
