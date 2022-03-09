@@ -58,7 +58,8 @@ class RelanceFragment : Fragment() {
     ) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         if(requestCode == REQUEST_CODE_RELANCE && grantResults[0] == PackageManager.PERMISSION_GRANTED ) {
-            // for (int i = 0; i<=9: i++)
+            // for (int i = 0; i<=9
+                // : i++)
             for(i in 0..9){
                 sendSmsRelance()
             }
